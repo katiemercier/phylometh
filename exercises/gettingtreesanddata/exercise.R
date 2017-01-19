@@ -6,11 +6,7 @@
 # a single tree for all life by creating essentially a supreme super tree.
 GetTreeFromOpenTree_solution <- function() {
 	library(rotl)
-<<<<<<< HEAD
-  library(ape)
-=======
 	library(ape)
->>>>>>> bomeara/master
 	# Now let's look for the gecko genus Anolis
 	# Figure out the id used for Anolis in Open Tree's database
 
@@ -23,7 +19,6 @@ GetTreeFromOpenTree_solution <- function() {
 	anolis.tree <- tol_subtree(ott_id=anolis.id)
 	
 	# Let's plot the tree:
-	frame()
 	plot.phylo(anolis.tree, type="fan", cex=0.2)
 	
 	# It has a lot of polytomies, representing uncertainty. A maximally resolved
@@ -53,7 +48,7 @@ GetTreeFromOpenTree_solution <- function() {
 	# And let's get the tree from this study
 	# Look in rotl documentation for the right function
 	# Hint: get_study_trees() is close, but you don't know the tree.id
-	anolis.study1.tree1 <- get_______FUNCTION_FROM_rotl____(anolis.studies.ids[[1]])
+	anolis.study1.tree1 <- get_study(anolis.studies.ids[[1]])
 	
 	# And plot it
 	plot.phylo(anolis.study1.tree1, type="fan", cex=0.2)
